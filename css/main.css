@@ -1,0 +1,75 @@
+/*
+	Vendor imports (libs etc)
+*/
+
+
+/*
+	Our imports
+*/
+@import 'lib/grid.css';
+@import 'lib/myColours.css';
+@import 'lib/navBar.css';
+
+html{
+font-family: 'Montserrat', sans-serif;
+}
+body{
+	margin: auto;
+	max-width: 100%;
+}
+main{
+
+}
+footer{
+
+}
+h3{
+	font-size: small;
+}
+@media only screen and (min-width: 500px) {
+body{
+	max-width: 70%;
+	}
+}
+hr{
+	height: 10px;
+	border-style: none;
+	margin: 0px;
+}
+a{
+	color: black;
+}
+li{
+	margin-top: 10px;
+}
+
+
+.contentBoxes{
+	margin: auto;
+	width: 100%;
+}
+.contentBoxes .contentBoxes__box{
+	overflow: auto;
+	margin: 20px;
+}
+.floatItem{
+	margin: 0px auto;
+	display: block;
+	text-align: center;
+}
+
+.contentBoxes__box .contentBoxes__box__img{
+	max-height: 100%;
+	max-width: 100%;
+}
+
+@media only screen and (min-width: 870px) {
+	.contentBoxes{
+		width: 80%;
+	}
+	.floatItem{
+		text-align: left;
+		float: left;
+		width: 50%;
+	}
+}

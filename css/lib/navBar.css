@@ -1,0 +1,53 @@
+
+
+
+
+
+.navigationBar{
+overflow: auto;
+width: 100%;
+
+}
+.navigationBar .navigationBar__box{
+	display: inline-flex;
+  float: left;
+  max-width: 33%;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.navigationBar .navigationBar__box--right{
+  float: right;
+}
+.navigationBar .navigationBar__box--mobileHide{
+  display: none;
+}
+.navigationBar .navigationBar__box__menu{
+}
+.navigationBar .navigationBar__box__menu h3{
+  display: inline-flex;
+}
+.navigationBar .navigationBar__box__menu ul{
+  padding: 0;
+  list-style-type: none;
+}
+.navigationBar .hideItem{
+  display: none!important;
+}
+
+@media only screen and (min-width: 870px) {
+  .navigationBar .navigationBar__box{
+  	display: inline-flex;
+    float: left;
+    width: auto;
+  }
+  .navigationBar .navigationBar__box--right{
+    display: inline-flex;
+    float: right;
+  }
+  .navigationBar .navigationBar__box--mobileHide{
+    display: inline-flex;
+  }
+  .navigationBar .navigationBar__box__menu{
+    display: none;
+  }
+}

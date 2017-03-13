@@ -23,18 +23,23 @@ main{
 footer{
 
 }
+h1{
+	margin-left: 10px;
+}
+header p{
+	margin-left: 10px;
+}
 h3{
 	font-size: small;
 }
-@media only screen and (min-width: 500px) {
-body{
-	max-width: 70%;
-	}
-}
 hr{
-	height: 10px;
+	height: 15px;
 	border-style: none;
 	margin: 0px;
+}
+header hr{
+	height: 5px;
+	width: auto;
 }
 a{
 	color: black;
@@ -50,26 +55,59 @@ li{
 }
 .contentBoxes .contentBoxes__box{
 	overflow: auto;
-	margin: 20px;
-}
-.floatItem{
-	margin: 0px auto;
-	display: block;
+	margin: 0px;
+	border-style: solid;
+	border-width: thin;
+	border-radius: 4px;
 	text-align: center;
 }
+.contentBoxes__box .floatItem{
+	display: block;
+	width: 100%
+}
+
+.floatItem h2{
+	margin:auto;
+}
+
 
 .contentBoxes__box .contentBoxes__box__img{
 	max-height: 100%;
 	max-width: 100%;
+	vertical-align: middle;
+}
+.subHeader{
+margin: auto;
+font-size: 200%;
+}
+.contentBoxes .dynamicBox{
+	text-align: left;
+	float: left;
+	width: 100%;
+	margin: auto;
+	margin-bottom: 15px;
 }
 
-@media only screen and (min-width: 870px) {
+
+@media only screen and (min-width: 700px) {
 	.contentBoxes{
-		width: 80%;
+		width: 70%;
 	}
-	.floatItem{
+	.contentBoxes__box .floatItem{
 		text-align: left;
 		float: left;
+		width: 100%;
+		margin: auto;
+	}
+	.contentBoxes .dynamicBox{
+		width: auto;
+		height: auto;
+		float: left;
+		margin: 15px 15px 0 0;
+		text-align: center;
+	}
+	.contentColumn{
 		width: 50%;
+		float: left;
 	}
 }

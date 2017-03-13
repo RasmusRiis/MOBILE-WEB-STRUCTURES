@@ -6,7 +6,6 @@
 .navigationBar{
 overflow: auto;
 width: 100%;
-
 }
 .navigationBar .navigationBar__box{
 	display: inline-flex;
@@ -34,7 +33,7 @@ width: 100%;
   display: none!important;
 }
 
-@media only screen and (min-width: 870px) {
+@media only screen and (min-width: 650px) {
   .navigationBar .navigationBar__box{
   	display: inline-flex;
     float: left;

@@ -1,14 +1,21 @@
 
 
 body{
-  background-color: #e6dbdb;
+  background-color: #e1b168;
 }
 header{
-  background-color: #7bc3fc;
+  background-color: #1b343c;
+  color: #e1b168;
 }
-header nav{
-
+header a{
+  color: #e1b168;
 }
-header hr{
-  background-color: #e6dbdb;
+hr{
+  background-color: #e1b168;
+}
+.contentBoxes__box{
+  background-color: #b96f20
+}
+.subHeader{
+	color: #1b343c
 }

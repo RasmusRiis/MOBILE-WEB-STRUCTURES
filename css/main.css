@@ -72,16 +72,16 @@ li{
 
 
 .contentBoxes__box .contentBoxes__box__img{
-	max-height: 100%;
-	max-width: 100%;
+	width: auto;
 	vertical-align: middle;
+	margin: auto;
+	border-radius: 2px;
 }
 .subHeader{
 margin: auto;
 font-size: 200%;
 }
 .contentBoxes .dynamicBox{
-	text-align: left;
 	float: left;
 	width: 100%;
 	margin: auto;
@@ -96,8 +96,9 @@ font-size: 200%;
 	.contentBoxes__box .floatItem{
 		text-align: left;
 		float: left;
-		width: 100%;
+		width: 50%;
 		margin: auto;
+
 	}
 	.contentBoxes .dynamicBox{
 		width: auto;

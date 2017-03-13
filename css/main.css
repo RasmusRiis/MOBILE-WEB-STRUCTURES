@@ -1,14 +1,11 @@
-/*
-	Vendor imports (libs etc)
-*/
+@import 'lib/headerStyle.css';
+@import 'lib/contentStyle.css';
+@import 'lib/footerStyle.css';
+@import 'lib/navigationBarStyle.css';
 
 
-/*
-	Our imports
-*/
-@import 'lib/grid.css';
-@import 'lib/myColours.css';
-@import 'lib/navBar.css';
+
+
 
 html{
 font-family: 'Montserrat', sans-serif;
@@ -16,99 +13,5 @@ font-family: 'Montserrat', sans-serif;
 body{
 	margin: auto;
 	max-width: 100%;
-}
-main{
-
-}
-footer{
-
-}
-h1{
-	margin-left: 10px;
-}
-header p{
-	margin-left: 10px;
-}
-h3{
-	font-size: small;
-}
-hr{
-	height: 15px;
-	border-style: none;
-	margin: 0px;
-}
-header hr{
-	height: 5px;
-	width: auto;
-}
-a{
-	color: black;
-}
-li{
-	margin-top: 10px;
-}
-
-
-.contentBoxes{
-	margin: auto;
-	width: 100%;
-}
-.contentBoxes .contentBoxes__box{
-	overflow: auto;
-	margin: 0px;
-	border-style: solid;
-	border-width: thin;
-	border-radius: 4px;
-	text-align: center;
-}
-.contentBoxes__box .floatItem{
-	display: block;
-	width: 100%
-}
-
-.floatItem h2{
-	margin:auto;
-}
-
-
-.contentBoxes__box .contentBoxes__box__img{
-	width: auto;
-	vertical-align: middle;
-	margin: auto;
-	border-radius: 2px;
-}
-.subHeader{
-margin: auto;
-font-size: 200%;
-}
-.contentBoxes .dynamicBox{
-	float: left;
-	width: 100%;
-	margin: auto;
-	margin-bottom: 15px;
-}
-
-
-@media only screen and (min-width: 700px) {
-	.contentBoxes{
-		width: 70%;
-	}
-	.contentBoxes__box .floatItem{
-		text-align: left;
-		float: left;
-		width: 50%;
-		margin: auto;
-
-	}
-	.contentBoxes .dynamicBox{
-		width: auto;
-		height: auto;
-		float: left;
-		margin: 15px 15px 0 0;
-		text-align: center;
-	}
-	.contentColumn{
-		width: 50%;
-		float: left;
-	}
+  background-color: #e1b168;
 }

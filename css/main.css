@@ -2,16 +2,14 @@
 @import 'lib/contentStyle.css';
 @import 'lib/footerStyle.css';
 @import 'lib/navigationBarStyle.css';
-
-
-
-
-
 html{
-font-family: 'Montserrat', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 body{
 	margin: auto;
 	max-width: 100%;
-  background-color: #e1b168;
+	background-color: #e1b168;
+}
+.notImplemented{
+	text-decoration: line-through;
 }

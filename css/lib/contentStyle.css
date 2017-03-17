@@ -64,10 +64,9 @@
 }
 @media only screen and (min-width: 720px) {
 	.contentBoxes__section--dynamic{
-		width: auto;
+		width: calc(100% - 15px);
 		height: auto;
 		float: left;
-		margin: 15px 15px 0 0;
 		overflow: auto;
 		border-style: solid;
 		border-width: thin;

@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Web design guideines - useability</title>
+  <title>Web design guideines - responsiveness</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
@@ -29,8 +29,8 @@
             <li><a class="navBar__itemHeader" href="accessibility.html">Accessibility</a></li>
             <li><a class="navBar__itemHeader" href="colour_palette.html">Colour palette</a></li>
             <li><a class="navBar__itemHeader" href="responsiveness.html">Responsiveness</a></li>
-            <li class="navBar__hideComponent"><a class="navBar__itemHeader" href="useability.html">Useability<a></li>
-            <li><a class="navBar__itemHeader" href="components.html">Components<a></li>
+            <li><a class="navBar__itemHeader" href="useability.html">Useability<a></li>
+            <li class="navBar__hideComponent"><a class="navBar__itemHeader" href="components.html">Components<a></li>
             </ul>
           </details>
         </div>
@@ -46,10 +46,10 @@
         <a class="navBar__navItem--mobileHide" href="responsiveness.html">
           <h3>Responsiveness</h3>
         </a>
-        <a class="navBar__hideComponent" href="useability.html">
+        <a class="navBar__navItem--mobileHide" href="useability.html">
           <h3>Useability</h3>
         </a>
-        <a class="navBar__navItem--mobileHide" href="components.html">
+        <a class="navBar__hideComponent" href="components.html">
           <h3>Components</h3>
         </a>
         <a class="navBar__navItem--right notImplemented" href="about_me">
@@ -61,65 +61,89 @@
       </nav>
     </header>
     <main>
-      <h2 class="subHeader">Useability</h2>
+      <h2 class="subHeader">Examples</h2>
       <section class="contentBoxes">
         <hr class="horizontalLine">
         <div class="contentBoxes__contentColumn">
           <article class="contentBoxes__section--dynamic">
             <section>
-              <h3>Structure and spacing</h3>
-              <p>Make the site easy to get an overview of. Using structure such as spacing between components and placement of content have a big impact on how the user sees the site. This site uses different spacing between the header and the navigation bar and between the navigation bar and the main content. Also, the main content is placed in the middle of the screen making the picture more balanced.
-              </p>
+              <h3>Data table</h3>
+              <table border ="2">
+              <caption>Table Tiltle</caption>
+              <tr scope="row">
+              <td></td>
+              <th scope="col">type-1</th>
+              <th scope="col">type-2</th>
+              <th scope="col">type-3</th>
+              <th scope="col">type-4</th>
+              <tr scope="row">
+              <th scope="row">type-a</th>
+              <td>data</td>
+              <td>data</td>
+              <td>data</td>
+              <td>data</td>
+              </tr>
+              <tr scope="row">
+              <th scope="row">type-b</th>
+              <td>data</td>
+              <td>data</td>
+              <td>data</td>
+              <td>data</td>
+              </tr>
+              </table>
             </section>
           </article>
           <article class="contentBoxes__section--dynamic">
             <section>
-              <h3>Easy to spot and understand links</h3>
-              <p>A uniform design is used for links as well as making sure they are explained. All links on this page is underlined (and no other text is!) which brings easy understanding throughout the page.
-              </p>
+              <h3>Button</h3>
+              <form>
+              <button class="button" formaction="components.html">Refresh page!</button>
+            </form>
             </section>
           </article>
           <article class="contentBoxes__section--dynamic">
             <section>
-              <h3>Simplicity</h3>
-              <p>Keep it simple is a help for the user as well as the designer. The design of this page is kept simple by using few colors and few different layouts for content. Also keeping the amount of info per page to a normal level helps, as seen in this project by splitting up topics into different pages and a single ‘Home’ page to give a brief summary of the topics.
-              </p>
-            </section>
-          </article>
-          <article class="contentBoxes__section--dynamic">
-            <section>
-              <h3>Consistency</h3>
-              <p>Consistency helps the user to understand different functionality. This page has a uniform header on all pages and boxes containing content all have the same layout.
-              </p>
+              <h3>Comment Form</h3>
+              <form class="commentForm">
+                Name: <input class="commentForm__input" type="text" name="Name"><br>
+                Job-title: <input class="commentForm__input" type="text" name="Job-tiltle"><br>
+                E-mail: <input class="commentForm__input" type="text" name="E-mail"><br>
+                Comment: <br>
+                <textarea class="commentForm__input" type="text" name="Comment"></textarea><br>
+                <button class="button" type="submit">Submit</button>
+              </form>
             </section>
           </article>
         </div>
         <div class="contentBoxes__contentColumn">
           <article class="contentBoxes__section--dynamic">
             <section>
-              <h3>Guidance</h3>
-              <p>Make it easy to find your way on a page by explaining links and as in this project; keep a uniform header with navigation to all other sites on your domain. This can be more difficult with larger pages. In this project the page you are currently on will not be displayed in the navigation bar. Another approach could be to highlight it.
+              <h3>Card based design</h3>
+              <p>Throughout this homepage all content sections is representet in cards. these are easy to reuse for diffeent purposes!
               </p>
             </section>
           </article>
           <article class="contentBoxes__section--dynamic">
             <section>
-              <h3>Typography</h3>
-              <p>Another way to help a user differ between the type of content is by changing the typography as seen on this pages footer which is italic.
+              <h3>Grid</h3>
+              <p>in this section a simple grid is used where widths is assigned using classes.
               </p>
+              <div class="gridBox col1"><p>25%</p></div>
+              <div class="gridBox col1"><p>25%</p></div>
+              <div class="gridBox col1"><p>25%</p></div>
+              <div class="gridBox col1"><p>25%</p></div>
+              <div class="gridBox col2"><p>50%</p></div>
+              <div class="gridBox col2"><p>50%</p></div>
+              <div class="gridBox col3"><p>75%</p></div>
+              <div class="gridBox col1"><p>25%</p></div>
+              <div class="gridBox col4"><p>100%</p></div>
             </section>
           </article>
           <article class="contentBoxes__section--dynamic">
             <section>
-              <h3>Relevancy</h3>
-              <p>Thinking about who you target when designing a site. In this case the target would be web-designers at the same level as me, since the page is mostly a reference page for myself.
-              </p>
-            </section>
-          </article>
-          <article class="contentBoxes__section--dynamic">
-            <section>
-              <h3>Reliability (not implemented)</h3>
-              <p>In this context reliability is trustworthy content of a page. This could be to implement the ‘About Me’ page seen in the navigation bar with a description of my background, knowledge etc. It could also be to include a ‘job title’ or ‘job description’ field in a comment section.
+              <h3>Navigation</h3>
+              <p>
+                See the navigation line where links to every other page is inserted. Also the link to the current site is removed and responsive features is implemented.
               </p>
             </section>
           </article>

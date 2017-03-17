@@ -43,7 +43,7 @@
 .navBar__hideComponent{
   display: none;
 }
-@media only screen and (min-width: 650px) {
+@media only screen and (min-width: 925px) {
   .navBar{
     overflow: auto;
     width: auto;
@@ -57,7 +57,10 @@
     margin-left: 10px;
     margin-right: 10px;
     color: #e1b168;
-    font-size: small;
+    font-size: x-small;
+  }
+  .navBar__navItem--right{
+    font-size: x-small;
   }
   .navBar__menuDropDown{
     display: none;

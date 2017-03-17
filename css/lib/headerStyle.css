@@ -15,7 +15,7 @@
   width: auto;
   background-color: #e1b168;
 }
-@media only screen and (min-width: 720px) {
+@media only screen and (min-width: 925px) {
   .header__title{
     margin-left: 15%;
   }

@@ -37,3 +37,10 @@ body{
 #comments{
 	overflow: hidden;
 }
+.noScript{
+	background-color: red;
+	font-size: 25px;
+}
+.noScriptHide{
+	display: none;
+}

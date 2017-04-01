@@ -6,6 +6,12 @@
 
 
 //javascript for comment Form component
+
+var noScriptElements = document.querySelectorAll(".noScriptHide");  //enable hidden elements that use javaScript
+for(var j=0; j<noScriptElements.length; j++){
+  noScriptElements[j].classList.remove("noScriptHide");
+}
+
 (function(){
 var commentNumber = localStorage.length;  //to keep track of comments in localStorage
 var nameInput = document.querySelector("#commentName");
@@ -21,16 +27,25 @@ nameInput.value = "Anonymous";
 var submitBtn = document.querySelector("#submitBtn");
 var hideShowBtn = document.querySelector("#hideShowBtn");
 
-if(Element.prototype.addEventListener){ //check if addEventListener is supported
+if(Modernizr.localstorage){ //check if localStorage is supported
+  updateCommSection();  //create comment section
+}else{  //inform or change elements that use localStorage!
+  output.textContent = "Local storage not supportet. Comments cannot be loaded";
+}
+
+if(Modernizr.eventlistener){ //check if addEventListener is supported
   attachEvents();
+}else{  //inform or change elements that use listeners!
+  var buttons = document.querySelectorAll("button");  //change all buttons
+  for(var j=0; j<buttons.length; j++){
+    buttons[j].textContent = "Event listeners not suppported :(";
+  }
 }
 
 function attachEvents(){
   submitBtn.addEventListener('click', addComment);
   hideShowBtn.addEventListener('click', function(){toggleVisibilityBlock(output)});
   emailInput.addEventListener('keyup', validateEmail);
-
-  updateCommSection();  //eventListeners are used in this function -- do not call if not supported
 }
 
 function addComment(){  //adds the comment string to localStorage

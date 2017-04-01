@@ -12,8 +12,10 @@
   <script src="js/respond.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
   <!-- <![endif] -->
+  <script type="text/javascript" src="js/modernizr-custom.js"></script>
 </head>
 <body>
+  <noscript class="noScript">Java Script is not running! Please turn on JavaScript for full experience!</noscript>
   <header class="header">
     <h1 class="header__title">Web design guideines</h1>
     <p class="header__subTitle">My personal guide and examples to web design</p>
@@ -69,14 +71,14 @@
       <section class="contentBoxes">
         <hr class="horizontalLine">
         <div class="contentBoxes__contentColumn">
-          <article class="contentBoxes__section--dynamic">
+          <article class="contentBoxes__section--dynamic noScriptHide">
             <section id="eventListeners">
             </section>
           </article>
           <article class="contentBoxes__section--dynamic">
             <section>
               <h3>Form input and local storage</h3>
-              <p>See the form component under 'Components'. Here a user can submit or delete comments. The local storage is used to save comments: See function addComment() from formDate.js . Try and enter comments and refresh the page!<br />Each comment is in its own div with its own delete button. To keep track of comments the local storage is used dynamicly and unique id's are used for each comment div<br />challenge is that the local storage can only save strings and not HTML elements which therefore is generated in the script together with the eventlisteners for the delete button as seen in the function updateCommSection() from formData.js.</p>
+              <p>See the form component under 'Components'. Here a user can submit or delete comments. The local storage is used to save comments: See function addComment() from formDate.js . Try and enter comments and refresh the page!<br />Each comment is in its own div with its own delete button. To keep track of comments the local storage is used dynamicly and unique id's are used for each comment div<br />challenge is that the local storage can only save strings and not HTML elements which therefore is generated in the script together with the eventlisteners for the delete button as seen in the function updateCommSection() from formData.js. <br /> Note that the comments are only saved locally and will therfor not be available for other users or browsers.</p>
             </section>
           </article>
         </div>
@@ -85,6 +87,18 @@
             <section>
               <h3>Text input validation</h3>
               <p>In the form example under 'Components' the E-mail field is validatet. By using a keyup event the field can be validatet everytime some text is added to the field. By setting a variable 'true' or 'false' every time the field is validated we can check validity when pressing the submit button</p>
+            </section>
+          </article>
+          <article class="contentBoxes__section--dynamic">
+            <section>
+              <h3>Code style</h3>
+              <p>The current java script files include alot of comment to help under the developement. these can be deletet when code is done and tested or they can stay to greatly increase maintainability og the code.</p>
+            </section>
+          </article>
+          <article class="contentBoxes__section--dynamic">
+            <section>
+              <h3>Feature detection</h3>
+              <p>In the beginning of the body element the HTML element noscript is added that will only be displayed if java script is disabled. this way the user is informed that they will not have full functionality. Also the class noScriptHide is createt to put on elements using scripts, so they will hide by default. The javascrip code then have to remove the class when js is enabled.<br />The use of Modernizr is also shown where it is used in the js code. From the Modernizr homepage the used features are chosen and the .js file is created and included. To use the detection in the js code a Modernizr object can be used to test if specific features are supported. In this site if event listeners are not supported all buttons will display not supported text. Modernizr can also be used in CSS.</p>
             </section>
           </article>
         </div>

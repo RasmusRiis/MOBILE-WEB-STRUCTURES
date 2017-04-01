@@ -12,8 +12,10 @@
   <script src="js/respond.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
   <!-- <![endif] -->
+  <script type="text/javascript" src="js/modernizr-custom.js"></script>
 </head>
 <body>
+  <noscript class="noScript">Java Script is not running! Please turn on JavaScript for full experience!</noscript>
   <header class="header">
     <h1 class="header__title">Web design guideines</h1>
     <p class="header__subTitle">My personal guide and examples to web design</p>
@@ -108,7 +110,7 @@
           <article class="contentBoxes__section--dynamic">
             <section>
               <h3>Comment Form</h3>
-              <form class="commentForm">
+              <form class="commentForm noScriptHide">
                 Name: <input id="commentName" class="commentForm__input" type="text" name="Name"><br>
                 Job-title: <input id="commentJobTitle" class="commentForm__input" type="text" name="Job-tiltle"><br>
                 <p id="emailNotValid"> Email Not Valid!<br /></p>

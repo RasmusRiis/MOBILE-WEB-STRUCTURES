@@ -34,3 +34,6 @@ body{
 	border-style: solid;
 	float: left;
 }
+#comments{
+	overflow: hidden;
+}

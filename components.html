@@ -31,6 +31,7 @@
             <li><a class="navBar__itemHeader" href="responsiveness.html">Responsiveness</a></li>
             <li><a class="navBar__itemHeader" href="useability.html">Useability<a></li>
             <li class="navBar__hideComponent"><a class="navBar__itemHeader" href="components.html">Components<a></li>
+            <li><a class="navBar__itemHeader" href="JavaScript.html">JavaScript<a></li>
             </ul>
           </details>
         </div>
@@ -51,6 +52,9 @@
         </a>
         <a class="navBar__hideComponent" href="components.html">
           <h3>Components</h3>
+        </a>
+        <a class="navBar__navItem--mobileHide" href="JavaScript.html">
+          <h3>JavaScript</h3>
         </a>
         <a class="navBar__navItem--right notImplemented" href="about_me">
           <h3>About me</h3>
@@ -105,13 +109,17 @@
             <section>
               <h3>Comment Form</h3>
               <form class="commentForm">
-                Name: <input class="commentForm__input" type="text" name="Name"><br>
-                Job-title: <input class="commentForm__input" type="text" name="Job-tiltle"><br>
-                E-mail: <input class="commentForm__input" type="text" name="E-mail"><br>
+                Name: <input id="commentName" class="commentForm__input" type="text" name="Name"><br>
+                Job-title: <input id="commentJobTitle" class="commentForm__input" type="text" name="Job-tiltle"><br>
+                <p id="emailNotValid"> Email Not Valid!<br /></p>
+                E-mail: <input id="commentEmail" class="commentForm__input" type="text" name="E-mail"><br>
                 Comment: <br>
-                <textarea class="commentForm__input" type="text" name="Comment"></textarea><br>
-                <button class="button" type="submit">Submit</button>
+                <textarea  id="commentComment" class="commentForm__input" type="text" name="Comment"></textarea><br>
+                <input class="button" id="submitBtn" type="button" value="Submit">
+                <input class="button" id="hideShowBtn" type="button" value="Hide/Show comments">
               </form>
+              <div id="comments">
+              </div>
             </section>
           </article>
         </div>
@@ -161,5 +169,6 @@
           </ul>
         </section>
       </footer>
+      <script type="text/javascript" src="js/formData.js"></script>
     </body>
     </html>

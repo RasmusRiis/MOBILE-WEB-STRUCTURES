@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Web design guideines - accessibility</title>
+  <title>Web design guideines - JavaScript</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
@@ -26,19 +26,19 @@
           </summary>
           <ul class="navBar__menuDropDown__headerList">
             <li><a class="navBar__itemHeader" href="index.html">Home</a></li>
-            <li class="navBar__hideComponent"><a class="navBar__itemHeader" href="accessibility.html">Accessibility</a></li>
+            <li><a class="navBar__itemHeader" href="accessibility.html">Accessibility</a></li>
             <li><a class="navBar__itemHeader" href="colour_palette.html">Colour palette</a></li>
             <li><a class="navBar__itemHeader" href="responsiveness.html">Responsiveness</a></li>
             <li><a class="navBar__itemHeader" href="useability.html">Useability<a></li>
             <li><a class="navBar__itemHeader" href="components.html">Components<a></li>
-            <li><a class="navBar__itemHeader" href="JavaScript.html">JavaScript<a></li>
+            <li class="navBar__hideComponent"><a class="navBar__itemHeader" href="JavaScript.html">JavaScript<a></li>
             </ul>
           </details>
         </div>
         <a class="navBar__navItem--mobileHide" href="index.html">
           <h3 class="navBar__itemHeader">Home</h3>
         </a>
-        <a class="navBar__hideComponent" href="accessibility.html">
+        <a class="navBar__navItem--mobileHide" href="accessibility.html">
           <h3>Accessibility</h3>
         </a>
         <a class="navBar__navItem--mobileHide" href="colour_palette.html">
@@ -53,7 +53,7 @@
         <a class="navBar__navItem--mobileHide" href="components.html">
           <h3>Components</h3>
         </a>
-        <a class="navBar__navItem--mobileHide" href="JavaScript.html">
+        <a class="navBar__hideComponent" href="JavaScript.html">
           <h3>JavaScript</h3>
         </a>
         <a class="navBar__navItem--right notImplemented" href="about_me">
@@ -65,34 +65,26 @@
       </nav>
     </header>
     <main>
-      <h2 class="subHeader">Accessibility</h2>
+      <h2 class="subHeader">JavaScript examples</h2>
       <section class="contentBoxes">
         <hr class="horizontalLine">
         <div class="contentBoxes__contentColumn">
           <article class="contentBoxes__section--dynamic">
-            <section>
-              <h3>Browser compatibility</h3>
-              <p>When using media queries to make a web-site responsive add respond.js to make them compatible with Internet Explorer 8 and under.
-                To make HTML5 elements compatible with most common browsers that do not support it, use html5shiv. Links to github provided below:
-              </p>
-              <ul>
-                <li class="contentBoxes__section__textSection__list"><a class="contentBoxes__section__textSection__link" href="https://github.com/aFarkas/html5shiv" target="_blank">Github html5shiv</a></li>
-                <li class="contentBoxes__section__textSection__list"><a class="contentBoxes__section__textSection__link" href="https://github.com/scottjehl/Respond" target="_blank">Github respond</a></li>
-              </ul>
+            <section id="eventListeners">
             </section>
           </article>
           <article class="contentBoxes__section--dynamic">
             <section>
-              <h3>Semantics</h3>
-              <p>With HTML5 elements your code will be much easier to read and understand due to the consistency they bring into the code. This will help both developers and search-engines to make sense of your site. For example, see the HTML for this site and the use of header, nav, main, section and article and how they give meaning to the page.</p>
+              <h3>Form input and local storage</h3>
+              <p>See the form component under 'Components'. Here a user can submit or delete comments. The local storage is used to save comments: See function addComment() from formDate.js . Try and enter comments and refresh the page!<br />Each comment is in its own div with its own delete button. To keep track of comments the local storage is used dynamicly and unique id's are used for each comment div<br />challenge is that the local storage can only save strings and not HTML elements which therefore is generated in the script together with the eventlisteners for the delete button as seen in the function updateCommSection() from formData.js.</p>
             </section>
           </article>
         </div>
         <div class="contentBoxes__contentColumn">
           <article class="contentBoxes__section--dynamic">
             <section>
-              <h3>Images</h3>
-              <p>To make a website clear for a user even if a site does not load images or if using a screen reader, the attribute ‘alt’ can be used to explain what is on the image. The attribute ‘title’ gives a title and displays it when the mouse is hovering over a picture. These gives more understanding of the page. Try hovering over an image on the <a class="contentBoxes__section__textSection__link" href="index.html">Home</a> page.</p>
+              <h3>Text input validation</h3>
+              <p>In the form example under 'Components' the E-mail field is validatet. By using a keyup event the field can be validatet everytime some text is added to the field. By setting a variable 'true' or 'false' every time the field is validated we can check validity when pressing the submit button</p>
             </section>
           </article>
         </div>
@@ -100,13 +92,6 @@
       <footer class="footer">
         <a class="footer__toTop" href="#"><h4 class="footer__toTop__text">^Go to top^</h4></a>
         <hr class="footer__horizontalLine">
-        <section class="footer__references">
-          <h2 class="footer__header">References</h2>
-          <ul class="footer__references__list">
-            <li>Farkas, A. (2015, July 21). Html5shiv. Retrieved March 17, 2017, from https://github.com/aFarkas/html5shiv</li>
-            <li>Scott, J. (2014,January 1). Respond. Retrieved March 17, 2017, from https://github.com/scottjehl/Respond</li>
-          </ul>
-        </section>
         <section class="footer__author">
           <h2>Contact details</h2>
           <ul class="footer__author__list">
@@ -116,5 +101,6 @@
           </ul>
         </section>
       </footer>
+      <script type="text/javascript" src="js/main.js"></script>
     </body>
     </html>

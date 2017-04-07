@@ -1,0 +1,36 @@
+@import 'lib/headerStyle.css';
+@import 'lib/contentStyle.css';
+@import 'lib/footerStyle.css';
+@import 'lib/navigationBarStyle.css';
+@import 'lib/grid.css';
+html{
+	font-family: 'Montserrat', sans-serif;
+}
+body{
+	margin: auto;
+	max-width: 100%;
+	background-color: #e1b168;
+}
+.notImplemented{
+	text-decoration: line-through;
+}
+.button{
+	margin: 20px;
+	background-color: #1b343c;
+	color:  #e1b168;
+	border-style: hidden;
+}
+.commentForm{
+	text-align: left;
+	width: calc(100%-20px);
+	margin: 10px;
+}
+.commentForm__input{
+	float: right;
+	width: 100%;
+}
+.gridBox{
+	Box-sizing: Border-box;
+	border-style: solid;
+	float: left;
+}

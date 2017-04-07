@@ -21,10 +21,13 @@ for(var j=0; j<noScriptElements.length; j++){
   clickMe.textContent = "Click Me!";
   hoverHere.textContent = "Hover over me!"
   contentHeader.textContent = "Event Listeners";
-  contentDescription.textContent = "Everything inside this content box is added with JavaScript! Try out these examples of eventlistensers.";
+  contentDescription.style = "white-space: pre;";
+  contentDescription.textContent = "Everything inside this content box is added with JavaScript!\nUsed event listeners are:\n'click'\n'mouseover'\n'mouseout'\nAnd in the comment form also:\n'keyup'\n'input'";
 
   clickMe.classList.add("button");
   hoverHere.classList.add("button");
+  clickMe.setAttribute("aria-label","hide text");
+  hoverHere.setAttribute("aria-label","show exstra text");
 
   evLisContentSection.appendChild(contentHeader);
   evLisContentSection.appendChild(contentDescription);
@@ -46,16 +49,16 @@ for(var j=0; j<noScriptElements.length; j++){
     hoverHere.addEventListener("mouseout",function(){toggleParagraphToElement(evLisContentSection);});
   }
 
-  function toggleVisibilityBlock(element){
+  function toggleVisibilityBlock(element){ //toggle visibility of an element
     if (element.style.display !== 'none') {
-        element.style.display = 'none';
+      element.style.display = 'none';
     }
     else {
-        element.style.display = 'block';
+      element.style.display = 'block';
     }
   }
 
-  function toggleParagraphToElement(element,text){
+  function toggleParagraphToElement(element,text){  //using a class to verify if element holds a paragraph or not so itcan be toggled
     var para = element.querySelector(".paragraphAdded");
     if(para){
       para.classList.remove("paragraphAdded");

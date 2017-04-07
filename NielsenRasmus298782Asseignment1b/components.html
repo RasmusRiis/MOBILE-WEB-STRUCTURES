@@ -9,10 +9,10 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
   <!--[if lt IE 9]>
-  <script src="js/respond.js"></script>
+  <script src="js/vendor/respond.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
   <!-- <![endif] -->
-  <script type="text/javascript" src="js/modernizr-custom.js"></script>
+  <script type="text/javascript" src="js/vendor/modernizr-custom.js"></script>
 </head>
 <body>
   <noscript class="noScript">Java Script is not running! Please turn on JavaScript for full experience!</noscript>
@@ -111,12 +111,14 @@
             <section>
               <h3>Comment Form</h3>
               <form class="commentForm noScriptHide">
-                Name: <input id="commentName" class="commentForm__input" type="text" name="Name"><br>
-                Job-title: <input id="commentJobTitle" class="commentForm__input" type="text" name="Job-tiltle"><br>
+                Name: <input id="commentName" class="commentForm__input" type="text" name="Name" maxlength="40"><br>
+                Job-title: <input id="commentJobTitle" class="commentForm__input" type="text" name="Job-tiltle" maxlength="40"><br>
                 <p id="emailNotValid"> Email Not Valid!<br /></p>
-                E-mail: <input id="commentEmail" class="commentForm__input" type="text" name="E-mail"><br>
+                E-mail: <input id="commentEmail" class="commentForm__input" type="text" name="E-mail" maxlength="40"><br>
+                <p id="noComment"> Comment Section cant be empty!<br /></p>
                 Comment: <br>
-                <textarea  id="commentComment" class="commentForm__input" type="text" name="Comment"></textarea><br>
+                <textarea  id="commentComment" class="commentForm__input" type="text" name="Comment" maxlength="200"></textarea><br>
+                <p class="charactersLeft">Characters left: <p><p class="charactersLeft" id="charactersLeft">200</p><br>
                 <input class="button" id="submitBtn" type="button" value="Submit">
                 <input class="button" id="hideShowBtn" type="button" value="Hide/Show comments">
               </form>
